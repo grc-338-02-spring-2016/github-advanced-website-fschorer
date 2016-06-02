@@ -1,0 +1,90 @@
+<!Doctype html>
+
+<html>
+    
+    
+
+<head>
+    <meta charset="utf-8">
+    <title>iso-test-1</title>
+    
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    
+    <script src="js/isotope.pkgd.js"></script>
+    
+    <style>
+        
+        body {
+            background-color: black; 
+        }
+        
+        .grid {
+            width: 99%;
+            height: 99%;
+            margin: 2% 2% 2% 2%;
+/*            padding: 1% 1% 1% 1%;*/
+            background-color: white;
+        }
+        
+        
+        .grid-sizer {
+            width: 10%;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        .grid-item {
+            width: 18%;       
+        }
+        
+        .grid-item--width2 { 
+            width: 25%; 
+        }
+    
+    </style>
+    
+</head>
+    
+<body>
+    
+    <div class="grid">
+        <div class="grid-sizer">
+            
+             <div class="grid-item"><img src="images-page/yellow.jpg" alt="Mars"></div>
+             <div class="grid-item grid-item--width2"><img src="images-page/mdosunset.jpg" alt="Mars"></div>
+            <div class="grid-item"><img src="images-page/flower.jpg" alt="Kepler"></div>
+            <div class="grid-item"><img src="images-page/tahoesnow.jpg" alt="Mars"></div>
+            <div class="grid-item"><img src="images-page/folsom.jpg" alt="Mars"></div>
+            <div class="grid-item"><img src="images-page/kayla.jpg" alt="Phobos Demos"></div>
+            <div class="grid-item"><img src="images-page/kayla1.jpg" alt="Titan"></div>
+            <div class="grid-item"><img src="images-page/madalena.jpg" alt="Enceladus"></div>
+             <div class="grid-item grid-item--width2"><img src="images-page/sunnies.jpg" alt="Enceladus"></div>
+            <div class="grid-item grid-item--width2"><img src="images-page/model.jpg" alt="Grand Tour"></div>
+            <div class="grid-item"><img src="images-page/carmel.jpg" alt="Enceladus"></div>
+           
+           
+        </div>
+    </div>
+    
+    <script>
+    
+   $('.grid').isotope({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  masonry: {
+    // use outer width of grid-sizer for columnWidth
+    columnWidth: '.grid-sizer'
+  
+  }
+})
+    
+    </script>
+    
+    
+    
+</body>
+
+
+</html>
